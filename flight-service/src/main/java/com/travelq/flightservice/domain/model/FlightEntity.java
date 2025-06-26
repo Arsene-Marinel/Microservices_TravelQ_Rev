@@ -40,8 +40,8 @@ public class FlightEntity {
     @Column(name = "stopovers", nullable = false)
     private int stopovers;
 
-    @OneToMany(mappedBy = "flight", fetch = FetchType.LAZY)
-    private List<TicketEntity> tickets;
+//    @OneToMany(mappedBy = "flight", fetch = FetchType.LAZY)
+//    private List<TicketEntity> tickets;
 
     @ManyToMany(mappedBy = "flights", fetch = FetchType.LAZY)
     private List<FlightComparisonEntity> comparisons;

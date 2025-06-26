@@ -9,8 +9,8 @@ import reactor.core.publisher.Mono;
 @RestController
 public class TokenController {
 
-    @GetMapping(value = "/token")
-    public Mono<String> getHome(@RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient) {
-        return Mono.just(authorizedClient.getAccessToken().getTokenValue());
-    }
+//    @GetMapping(value = "/token")
+//    public Mono<String> getHome(@RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient) {
+//        return Mono.just(authorizedClient.getAccessToken().getTokenValue());
+//    }
 }
